@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Mi Portafolio</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">Sobre Mi</a></li>
+            <li><a href="#skilltec" onclick="seleccionar()">Habilidades</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">Curriculum</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">Proyectos</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/perfil.jpg" alt="" />
+        </div>
+        <h1>Darío Guerrón</h1>
+        <h2>Ingeniero Matemático</h2>
+        <h2>Tnlgo en Análisis de Sistemas</h2>
+        <div class="redes">
+          <a href="doc/CV.pdf" target="_blank">
+            <i class="fa-solid fa-download"></i>
+          </a>
+          <a href="https://www.facebook.com/dario.guerron/" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/darioguerron/" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/DarkXavi" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="mailto:darkjav19@gmail.com?subject=Hola%20Sumanth"
+            target="_blank"
+          >
+            <i class="fa-brands fa-google"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p>
+          <span>Hola, soy Darío Guerrón.</span> Profesional apasionado por la
+          Ciencia y la Tecnología, con experiencia en Soporte Técnico de
+          Hardware y Software de computadoras, Tutor académico de Matemática y
+          Física Aplicada, competente en apoyo en Gestión Administrativa y
+          Optimización de Procesos. Formado en Ingeniería Matemática y
+          Tecnología en Análisis de Sistemas. Actualmente aprendiendo Análisis
+          de Datos con herramientas tecnológicas como Excel, SQL, Python y Power
+          BI.
+        </p>
+
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Teléfono:</strong>
+                +593 023200711.
+              </li>
+              <li>
+                <strong>Celular:</strong>
+                +593 0993847520.
+              </li>
+              <li>
+                <strong>Email:</strong>
+                dario_gb18@outlook.com
+              </li>
+              <li>
+                <strong>Dirección:</strong>
+                La Gasca, Quito-Ecuador.
+              </li>
+              <li>
+                <strong>Cargo:</strong>
+                <span>FREELANCE</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- intereses -->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-rocket"></i>
+                <span>ESPACIO</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-laptop"></i>
+                <span>TECNOLOGIA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-bicycle"></i>
+                <span>DEPORTE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-book"></i>
+                <span>LIBROS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        href="doc/CV.pdf"
+        download="CV_Darío_Guerrón.pdf"
+        class="download-link"
+      >
+        <button>
+          Descargar CV <i class="fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </button>
+      </a>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <!-- TECNICAS -->
+    <section id="skilltec" class="skilltec">
+      <div class="contenido-seccion">
+        <h2>Habilidades</h2>
+        <div class="fila">
+          <!-- intereses -->
+          <div class="col">
+            <h3>Técnicas</h3>
+
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-paperclip"></i>
+                <span>Sw Oficina</span>
+              </div>
+
+              <div class="interes">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Sw Educativo</span>
+              </div>
+
+              <div class="interes">
+                <i class="fa-regular fa-keyboard"></i>
+                <span>VS Code</span>
+              </div>
+              <div class="interes">
+                <i class="fa-regular fa-keyboard"></i>
+                <span>Pycharm</span>
+              </div>
+            </div>
+
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-brands fa-python"></i>
+                <span>Python</span>
+              </div>
+
+              <div class="interes">
+                <i class="fa-solid fa-database"></i>
+                <span>MySQL</span>
+              </div>
+
+              <div class="interes">
+                <i class="fa-solid fa-server"></i>
+                <span>SQL Server</span>
+              </div>
+
+              <div class="interes">
+                <i class="fa-solid fa-file-excel"></i>
+                <span>Excel</span>
+              </div>
+
+              <div class="interes">
+                <i class="fa-solid fa-chart-bar"></i>
+                <span>Power BI</span>
+              </div>
+
+              <div class="interes">
+                <i class="fa-solid fa-filter"></i>
+                <span>Power Query</span>
+              </div>
+
+              <div class="interes">
+                <i class="fa-brands fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFESIONALES -->
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <div class="fila">
+          <div class="col">
+            <h3>Profesionales</h3>
+            <div class="skill">
+              <span>Pensamiento Crítico</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>100%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Observación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Abstracción</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo bajo Presión</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Professional Skills -->
+          <div class="col">
+            <h3>Sociales</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Puntualidad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>100%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Proyect Management</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>Proyectos</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="img/p1.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p2.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p3.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p4.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p5.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p6.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación y Proyectos</h3>
+            <div class="item izq">
+              <h4>Ingeniero Matemático</h4>
+              <span class="casa">Universidad Central del Ecuador</span>
+              <span class="fecha">2024</span>
+              <p>
+                Graduado de la Facultad de Ciencias de la Universidad Central
+                del Ecuador.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Tecnólogo en Análisis de Sistemas</h4>
+              <span class="casa">Tencológico Superior Cordillera</span>
+              <span class="fecha">2014</span>
+              <p>
+                Graduado de la Carrera de Sistemas como Tecnólogo en Análisis de
+                Sistemas.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+
+            <div class="item izq">
+              <h4>Pasante de Matemática</h4>
+              <span class="casa">APTAIMPORTS</span>
+              <span class="fecha">2023</span>
+              <p>
+                Realicé mi pasantía como ayudante en la Gestión de Inventario
+                mediante Excel, así como el acompañamiento en el despacho de
+                productos.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+
+            <div class="item izq">
+              <h4>Vinculación con la Sociedad</h4>
+              <span class="casa">Universidad Central del Ecuador</span>
+              <span class="fecha">2022</span>
+              <p>
+                Contribuí en la creación de los mapeos en 2D de la Universidad
+                Central del Ecuador y de zonas específicas de cultivo del GAD
+                Parroquial de Pilahuín en Ambato, mediante Fotogrametría con
+                drones y el uso de Python como lenguaje de programación con el
+                IDE PyCharm junto con las librerías Numpy y OpenCV para el
+                desarrollo del modelo.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+
+            <div class="item izq">
+              <h4>Pasante de Sistemas</h4>
+              <span class="casa">Tencológico Superior Cordillera</span>
+              <span class="fecha">2014</span>
+              <p>
+                Soporte Técnico de Pc's y Laptops a la carrera de Sistemas y
+                Diseño Gráfico, además de ser el encargado de la adecuada
+                administración de los laboratorios de cómputo.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+
+            <div class="item izq">
+              <h4>Pasante de Sistemas</h4>
+              <span class="casa">Cratel TV Teleamazonas</span>
+              <span class="fecha">2014</span>
+              <p>
+                Soporte Técnico de Pc's y Laptops, apoyo en instalación de redes
+                informáticas, ensamblaje de equipos informáticos y testeo de
+                sistema de puntuación para programa “Mis Pequeños Gigantes”.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Experiencia Profesional</h3>
+            <div class="item der">
+              <h4>Proyectos Personales</h4>
+              <span class="casa">FreeLancer</span>
+              <span class="fecha">Sept 2024 - 2025</span>
+              <p>
+                Capacitandome mediante cursos sobre la creación de Dashboard con
+                Power Bi, el Análisis Exploratorio de Datos y ETL mediante Excel
+                y Python, además de Gestores de bases de datos MySQL y SQL
+                Server.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Administrador de Almacén</h4>
+              <span class="casa">APTAIMPORTS</span>
+              <span class="fecha"> May 2023 - Oct 2024</span>
+
+              <ul>
+                <li style="margin-bottom: 10px">
+                  Desempeñé de tareas administrativas generales. (Gestión y
+                  despacho de productos).
+                </li>
+                <li style="margin-bottom: 10px">
+                  Asistí en tareas específicas, facturación (ICONTA) y
+                  agendamiento de envíos (LAAR).
+                </li>
+                <li style="margin-bottom: 10px">
+                  Inventarié y desarrollé un sistema de inventario con los
+                  diferentes productos de la empresa para acelerar la entrega de
+                  producto.
+                </li>
+                <li style="margin-bottom: 10px">
+                  Implementación de mejores prácticas de embalaje para reducir
+                  errores y tiempos de entrega, bajando los tiempos de salida de
+                  productos más de un 80%.
+                </li>
+                <li style="margin-bottom: 10px">
+                  Lideré la gestión administrativa con soluciones innovadoras,
+                  como la optimización de solicitudes de pedidos mediante la
+                  creación de una plantilla para la generación de la proforma,
+                  mejorando así la eficiencia operativa.
+                </li>
+                <li>
+                  Aporté soluciones innovadoras como la óptima ubicación de los
+                  productos como estrategia de venta para el ahorro de tiempo y
+                  costes.
+                </li>
+              </ul>
+
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Tutor Académico</h4>
+              <span class="casa">FreeLancer</span>
+              <span class="fecha">Ener 2017 - 2025</span>
+
+              <ul>
+                <li style="margin-bottom: 10px">
+                  Tutorías presenciales o virtuales a través de Zoom, iDroo,
+                  Graspable Math, Miro, sobre Matemática y Física Aplicada.
+                </li>
+                <li style="margin-bottom: 10px">
+                  Resolución de ejercicios y tareas guiadas.
+                </li>
+                <li>
+                  Herramientas de estudio como Mathos AI, GeoGebra, Symbolab,
+                  Wolfram Alpha, Mathway.
+                </li>
+              </ul>
+
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+
+            <div class="item der">
+              <h4>Soporte Técnico de Equipos Informáticos</h4>
+              <span class="casa">FreeLancer</span>
+              <span class="fecha">Ene 2014 - 2025</span>
+              <ul>
+                <li style="margin-bottom: 10px">
+                  Mantenimiento preventivo y/o correctivo de equipos
+                  informáticos.
+                </li>
+                <li style="margin-bottom: 10px">Instalación de software.</li>
+                <li>Soporte técnico virtual a usuarios (TeamViewer).</li>
+              </ul>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="doc/CV.pdf" target="_blank">
+          <i class="fa-solid fa-download"></i>
+        </a>
+        <a href="https://www.facebook.com/dario.guerron/" target="_blank">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/darioguerron/" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/DarkXavi" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a
+          href="mailto:darkjav19@gmail.com?subject=Hola%20Sumanth"
+          target="_blank"
+        >
+          <i class="fa-brands fa-google"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
