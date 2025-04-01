@@ -62,3 +62,35 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// Funcionalidad para filtros de proyectos
+document.addEventListener("DOMContentLoaded", function () {
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const projectCards = document.querySelectorAll(".project-card");
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      // Eliminar clase active de todos los botones
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+
+      // Agregar clase active al botón clickeado
+      this.classList.add("active");
+
+      // Obtener el filtro seleccionado
+      const filter = this.getAttribute("data-filter");
+
+      // Filtrar proyectos
+      projectCards.forEach((card) => {
+        if (filter === "todos") {
+          card.style.display = "block";
+        } else {
+          if (card.getAttribute("data-category") === filter) {
+            card.style.display = "block";
+          } else {
+            card.style.display = "none";
+          }
+        }
+      });
+    });
+  });
+});

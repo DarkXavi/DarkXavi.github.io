@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Portafolio de Darío Guerrón" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portafolio Darío Guerrón</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+
+  <body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+      <header>
+        <div><button id="toggleTheme" aria-label="Modo oscuro">🌙</button></div>
+        <div class="logo">
+          <a href="index.html">Mi Portafolio</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="index.html" onclick="seleccionar()">Inicio</a></li>
+            <li>
+              <a href="index.html#sobremi" onclick="seleccionar()">Sobre Mi</a>
+            </li>
+            <li>
+              <a href="index.html#skilltec" onclick="seleccionar()"
+                >Habilidades</a
+              >
+            </li>
+            <li>
+              <a href="index.html#portfolio" onclick="seleccionar()"
+                >Proyectos</a
+              >
+            </li>
+            <li>
+              <a href="index.html#curriculum" onclick="seleccionar()"
+                >Curriculum</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Portafolio de proyectos</h1>
+    </section>
+
+    <!-- Filter Tabs -->
+    <div class="filters">
+      <button class="filter-btn" data-filter="backend">Backend</button>
+      <button class="filter-btn" data-filter="frontend">Frontend</button>
+      <button class="filter-btn" data-filter="fullstack">Fullstack</button>
+      <button class="filter-btn active" data-filter="todos">Todos</button>
+    </div>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido--seccion">
+        <!-- Proyectos estilo tarjetas -->
+        <div class="projects-container">
+          <!-- Project 1 -->
+          <div class="project-card" data-category="frontend">
+            <div class="project-image">
+              <img src="/api/placeholder/400/180" alt="Web Colraices" />
+              <div class="project-type">Frontend</div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Web Colraices</h3>
+              <p class="project-description">
+                Colraices es una empresa con más de 17 años en el mercado
+                Colombiano, tras la pandemia, los...
+              </p>
+              <div class="tech-stack">
+                <span class="tech-badge">Next.JS</span>
+                <span class="tech-badge">React.JS</span>
+                <span class="tech-badge">SASS</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">HTML</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card" data-category="fullstack">
+            <div class="project-image">
+              <img
+                src="/api/placeholder/400/180"
+                alt="Momentum Generative App"
+              />
+              <div class="project-type">Fullstack</div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Momentum Generative App</h3>
+              <p class="project-description">
+                Agencia Momentum es una empresa que se dedica a brindar
+                soluciones de marketing digital, en su proceso...
+              </p>
+              <div class="tech-stack">
+                <span class="tech-badge">Node.JS</span>
+                <span class="tech-badge">Express.JS</span>
+                <span class="tech-badge">React.JS</span>
+                <span class="tech-badge">SASS</span>
+                <span class="tech-badge">MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card" data-category="frontend">
+            <div class="project-image">
+              <img
+                src="/api/placeholder/400/180"
+                alt="Portal Inmobiliario Colraices"
+              />
+              <div class="project-type">Frontend</div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Portal Inmobiliario Colraices</h3>
+              <p class="project-description">
+                Un portal de inmuebles construido con Next.js y React. Esta
+                plataforma permite a los usuarios explorar una...
+              </p>
+              <div class="tech-stack">
+                <span class="tech-badge">Next.JS</span>
+                <span class="tech-badge">React.JS</span>
+                <span class="tech-badge">SASS</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">HTML</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="doc/CV.pdf" target="_blank">
+          <i class="fa-solid fa-download"></i>
+        </a>
+        <a href="https://www.facebook.com/dario.guerron/" target="_blank">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/darioguerron/" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/DarkXavi" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a
+          href="mailto:darkjav19@gmail.com?subject=Hola%20Sumanth"
+          target="_blank"
+        >
+          <i class="fa-brands fa-google"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
