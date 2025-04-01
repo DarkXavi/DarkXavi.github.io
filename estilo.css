@@ -9,6 +9,23 @@ html {
   /* me permite deslizar cuando hago clic en los links del menu */
   scroll-behavior: smooth;
 }
+
+:root {
+  --bg-color: #0c0c0c;
+  --text-color: #fff;
+}
+
+.light-mode {
+  --bg-color: #fff;
+  --text-color: #000;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
 /* MENU */
 .contenedor-header {
   background: #1e2326;
@@ -59,7 +76,7 @@ html {
 .inicio {
   background: linear-gradient(
       to top,
-      rgba(30, 35, 38, 0.8),
+      rgba(32, 54, 80, 0.568),
       rgba(30, 35, 38, 1)
     ),
     url(img/fondo1.png);
@@ -111,7 +128,11 @@ html {
   background-color: #1cb698;
 }
 .sobremi {
-  background-color: #1e2326;
+  background: linear-gradient(
+    to top,
+    rgba(32, 54, 80, 0.568),
+    rgba(30, 35, 38, 1)
+  );
   color: #fff;
   padding: 50px 20px;
 }
@@ -221,6 +242,11 @@ html {
 /* SECCION S K I L L S */
 /*TECNICOS*/
 .skilltec {
+  background: linear-gradient(
+    to top,
+    rgba(32, 54, 80, 0.568),
+    rgba(30, 35, 38, 1)
+  );
   background-color: #252a2e;
   color: #fff;
   padding: 50px 20px;
@@ -323,7 +349,11 @@ html {
 
 /* PROFESSIONALES*/
 .skills {
-  background-color: #252a2e;
+  background: linear-gradient(
+    to top,
+    rgba(32, 54, 80, 0.568),
+    rgba(30, 35, 38, 1)
+  );
   color: #fff;
   padding: 50px 20px;
 }
@@ -512,7 +542,11 @@ html {
 }
 /* SECCION CURRICULUM */
 .curriculum {
-  background-color: #1e2326;
+  background: linear-gradient(
+    to top,
+    rgba(32, 54, 80, 0.568),
+    rgba(30, 35, 38, 1)
+  );
   color: #fff;
   padding: 50px 20px;
 }
@@ -618,10 +652,15 @@ html {
 
 /* SECCION PORTFOLIO */
 .portfolio {
-  background-color: #252a2e;
+  background: linear-gradient(
+    to top,
+    rgba(32, 54, 80, 0.568),
+    rgba(30, 35, 38, 1)
+  );
   color: #fff;
   padding: 50px 20px;
 }
+
 .portfolio .contenido-seccion {
   max-width: 1100px;
   margin: auto;
