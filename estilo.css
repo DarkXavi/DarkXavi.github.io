@@ -26,6 +26,10 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
+a {
+  color: rgb(255, 255, 255); /* Cambia a cualquier color que desees */
+}
+
 /* WHATSAPP */
 .whatsapp-float {
   position: fixed;
